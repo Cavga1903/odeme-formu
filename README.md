@@ -45,6 +45,7 @@ npm start
 
 ## 🗂️ Proje Dosya Yapısı
 
+```bash
 src/
 ├── assets/
 │   ├── form-light.png
@@ -56,6 +57,7 @@ src/
 ├── index.js
 ├── index.css
 README.md
+```
 
 ## 🧪 Öğrenilen Konular
 
