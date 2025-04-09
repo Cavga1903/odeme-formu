@@ -65,10 +65,10 @@ README.md
 
 - useState ile form kontrolü
 - Controlled components mantığı
-- React’te dinamik <select> üretimi
+- React’te dinamik ```bash"<select>"``` üretimi
 - Regex ile input filtreleme (sadece harf, sadece sayı)
 - CSS ile dark mode yönetimi
-- Tarayıcı uyumlu <select> ok tasarımı
+- Tarayıcı uyumlu ```bash"<select>"``` ok tasarımı
 - Mobil uyumlu responsive tasarım
 
 ## 📞 İletişim
