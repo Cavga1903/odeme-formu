@@ -74,6 +74,6 @@ README.md
 ## 📞 İletişim
 
 - 📧 E-posta: <cavgaa228@gmail.com>
-- GitHub: @cavga1903
+- 💼 [GitHub: @cavga1903](https://github.com/cavga1903)
 
 ## 📬 Sorularınız varsa çekinmeden ulaşabilirsiniz
