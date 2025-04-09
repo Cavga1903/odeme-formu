@@ -1,30 +1,40 @@
-# 💳 Ödeme Formu Uygulaması | React Credit Card Payment Form
+# 💳 Ödeme Formu Uygulaması (React + Dark Mode + Mobil Uyumlu)
 
-Bu proje, React ve useState hook'u kullanılarak geliştirilmiş bir ödeme (kredi kartı) formudur. Kullanıcıdan isim, kart numarası, son kullanma tarihi ve güvenlik kodu bilgilerini alır ve form verilerini ekrana `alert()` ile yazdırır.
+Bu proje, React kullanılarak geliştirilmiş bir kredi kartı ödeme formu uygulamasıdır.  
+Amaç, kullanıcıdan kredi kartı bilgilerini alarak `alert()` ile görüntülemek ve form verilerini **useState** ile kontrol etmektir.
 
-## 🚀 Proje Özellikleri
+---
 
-- React (Fonksiyonel bileşenler)
-- `useState` Hook ile form kontrolü
-- Dinamik Ay ve Yıl select menüleri (şu anki yıldan başlayarak +10 yıl)
-- Sayfa yenilenmeden form verilerini alma
-- Temiz ve sade CSS tasarımı (örnek görselle birebir uyumlu)
+## 🖼️ Uygulama Görselleri
 
-## 🖼️ Arayüz Tasarımı
+### ☀️ Aydınlık Mod
 
-![Ödeme Formu Görseli](./src/assets/form-gorseli.png)
+![Light Mode](./src/assets/form-gorseli2.png)
 
-## 🧩 Kullanılan Teknolojiler
+### 🌙 Karanlık Mod
 
-- React
-- JSX
-- useState
-- CSS (pure)
-- JavaScript ES6+
+![Dark Mode](./src/assets/form-gorseli.png)
 
-## 🛠️ Kurulum ve Çalıştırma
+---
 
-Projeyi klonladıktan sonra:
+## 🖼️ Uygulama Özellikleri
+
+- ✅ React (Fonksiyonel bileşenlerle)
+- ✅ `useState` hook kullanımı
+- ✅ Gerçek zamanlı input kontrolü
+- ✅ Dark/Light Mod geçişi
+- ✅ Mobil uyumlu responsive tasarım
+- ✅ 4’erli gruplarla kart numarası biçimlendirme
+- ✅ Kart ismi sadece harf kabul eder
+- ✅ Ay ve yıl dinamik olarak oluşturulur
+- ✅ CVV alanı sadece 3 haneli sayılarla sınırlı
+- ✅ Tarayıcılar arası uyumlu `<select>` tasarımı (Safari, Chrome, Brave)
+
+---
+
+## 🛠️ Kurulum & Çalıştırma
+
+Projenizi bilgisayarınıza klonladıktan sonra:
 
 ```bash
 git clone https://github.com/cavga1903/odeme-formu.git
@@ -36,25 +46,32 @@ npm start
 ## 🗂️ Proje Dosya Yapısı
 
 src/
+├── assets/
+│   ├── form-light.png
+│   └── form-dark.png
 ├── components/
-│   └── PaymentForm.jsx
+│   ├── PaymentForm.jsx
 │   └── PaymentForm.css
 ├── App.js
-└── index.js
+├── index.js
+├── index.css
+README.md
 
 ## 🧪 Öğrenilen Konular
 
 ## 🧠 Bu proje sayesinde aşağıdaki React konularında pratik yapılmıştır
 
-- React’de form yönetimi
-- useState ile input kontrolü
-- Select menüleriyle dinamik veri yönetimi
-- Temel CSS ile arayüz oluşturma
-- Alert ile veri gösterimi
-- Form submit işleminde e.preventDefault() kullanımı
+- useState ile form kontrolü
+- Controlled components mantığı
+- React’te dinamik <select> üretimi
+- Regex ile input filtreleme (sadece harf, sadece sayı)
+- CSS ile dark mode yönetimi
+- Tarayıcı uyumlu <select> ok tasarımı
+- Mobil uyumlu responsive tasarım
 
 ## 📞 İletişim
 
-## 📬 Sorularınız varsa çekinmeden ulaşabilirsiniz
-
 - 📧 E-posta: <cavgaa228@gmail.com>
+- GitHub: @cavga1903
+
+## 📬 Sorularınız varsa çekinmeden ulaşabilirsiniz

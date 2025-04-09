@@ -1,65 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
 .form-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 400px;
-    margin: 10px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: rgb(50, 50, 50);
-    text-align: left;
-  }
-  
-  h2 {
-    margin-bottom: 5px;
-  }
-  
-  p {
-    margin-bottom: 20px;
-    color: gray;
-  }
-  
-  form label {
-    display: block;
-    margin-top: 10px;
-    margin-right: auto;
-    font-weight: 500;
-    color: rgb(50, 50, 50);
+  background-color: white;
+  color: black;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
 
+.form-container.dark {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.form-container.dark input,
+.form-container.dark select {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 36px;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px 16px;
+}
+
+.form-container.dark select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-position: right 12px center;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.row > div {
+  flex: 1;
+  min-width: 90px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-container.dark button[type="submit"] {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  color: inherit;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    margin: 16px;
+    padding: 20px;
   }
-  
-  input, select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+
+  input,
+  select {
+    font-size: 15px;
   }
-  
+
   .row {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    flex-direction: column;
   }
-  
+
   .row > div {
-    flex: 1;
+    min-width: 100%;
   }
-  
-  button {
-    margin-top: 20px;
-    width: 100%;
-    padding: 12px;
-    background-color: rgb(50, 50, 50);
-
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-
-  button:hover{
-    background-color: black;
-
-  }
+}
