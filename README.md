@@ -42,10 +42,10 @@ src/
 ├── App.js
 └── index.js
 
-
 ## 🧪 Öğrenilen Konular
 
-## 🧠 Bu proje sayesinde aşağıdaki React konularında pratik yapılmıştır:
+## 🧠 Bu proje sayesinde aşağıdaki React konularında pratik yapılmıştır
+
 - React’de form yönetimi
 - useState ile input kontrolü
 - Select menüleriyle dinamik veri yönetimi
@@ -55,5 +55,6 @@ src/
 
 ## 📞 İletişim
 
-## 📬 Sorularınız varsa çekinmeden ulaşabilirsiniz.
-- 📧 E-posta: cavgaa228@gmail.com
+## 📬 Sorularınız varsa çekinmeden ulaşabilirsiniz
+
+- 📧 E-posta: <cavgaa228@gmail.com>
